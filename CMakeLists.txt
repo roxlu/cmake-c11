@@ -17,3 +17,4 @@ target_link_libraries(rx -pthread)
 # -----------------------------------------------------------------
 
 add_executable(test test.c)
+target_link_libraries(test -pthread)
