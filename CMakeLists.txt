@@ -15,3 +15,5 @@ add_library(rx STATIC ${sources})
 target_link_libraries(rx -pthread)
 
 # -----------------------------------------------------------------
+
+add_executable(test test.c)
