@@ -14,14 +14,7 @@ struct rxlog_item {
 
 /* ------------------------------------------------------- */
 
-struct rxlog {
-  struct rxlog_item* items;
-  uint32_t num_items;
-  uint32_t write_dx;
-  uint32_t read_dx;
-  struct mtx_t mut;
-  struct thrd_t thr;
-};
+struct rxlog;
 
 /* ------------------------------------------------------- */
 

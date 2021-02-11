@@ -1,6 +1,16 @@
-#include <threads.h>
 #include <stdio.h>
+#include <threads.h>
+
 #include "log.h"
+
+struct rxlog {
+  struct rxlog_item* items;
+  uint32_t num_items;
+  uint32_t write_dx;
+  uint32_t read_dx;
+  mtx_t mut;
+  thrd_t thr;
+};
 
 /* ------------------------------------------------------- */
 

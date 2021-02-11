@@ -13,6 +13,7 @@ set(sources
 
 add_library(rx STATIC ${sources})
 target_link_libraries(rx -pthread)
+target_compile_options(rx PUBLIC "-pthread")
 
 # -----------------------------------------------------------------
 
